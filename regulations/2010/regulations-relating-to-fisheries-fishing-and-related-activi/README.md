@@ -2,7 +2,7 @@
 
 Source: https://faolex.fao.org/docs/pdf/lbr132701.pdf
 
-In force: 2010-10-01 (date-made: "issued on October 1, 2010").
+In force: 2010-10-01 (effective-date-clause: "having effect from this 1st day of October A.D. 2010").
 
 Text: the PDF's own text layer as the publisher supplies it, not corrected.
 
