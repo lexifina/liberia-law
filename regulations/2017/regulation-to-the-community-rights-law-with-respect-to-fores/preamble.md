@@ -1,0 +1,50 @@
+# VOL. XVI
+
+WEDNESDAY, MAY 17, 2017,
+· NO. 27
+EXTRAORDINARY
+THE GOVERNMENT OF THE REPUBLIC OF LIBERIA
+AL~NOUNCES
+THAT
+THE
+FORESTRY
+DEVELOPMENT
+AUTHORITY (FDA), PURSUANT TO ITS MANDATE UNDER
+THE COMMUNITY RIGHTS LAW OF 2009, ~AS ISSUED ON
+MAY 17, 2017 A REGULATION HEREIN UNDER:
+REGULATION TO THE COMMUNITY RIGHTS LAW OF 2009
+WITH RESPECT TO FOREST LANDS AS AMENDED
+BY ORDER OF THE PRESIDENT
+MARJON V. KAMARA
+MINISTER OF FOREIGN AFFAIRS
+MINISTRY OF FOREIGN AFFAIRS
+MONROVIAr LIBERIA
+
+Forestry Development Authority
+
+Republic of Liberia
+
+Regulation to the Community Rights Law of
+2009 with Respect to Forest Lands, as Amended
+
+Published: May 17, 2017
+
+FORESTRY DEVELOPMENT
+AUTHORITY
+
+REGULATION TO THE
+COMMUNITY RIGHTS LAW OF
+2009 WITH RESPECT TO FOREST
+LANDS, AS AMENDED
+
+This document was developed with funding provided by the United States Agency for
+International Development, Contract No. AID-669-C-12-00004, People, Rules and
+Organizations Supporting the Protection of Ecosystem Resources (PROSPER) program.
+
+It has been printed with funding from the Liberia Forest Sector Project (LFSP).
+
+CONTENTS
+
+PREAMBLE
+
+CHAPTER 1:  GENERAL PROVISIONS
