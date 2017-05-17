@@ -2,7 +2,7 @@
 
 Source: https://faolex.fao.org/docs/pdf/lbr180010.pdf
 
-In force: 2017-05-17 (date-made: "ISSUED ON MAY 17, 2017").
+In force: 2017-05-17 (handbill-publication: "Published: May 17, 2017").
 
 Text: the PDF's own text layer as the publisher supplies it, not corrected.
 
