@@ -2,7 +2,7 @@
 
 Source: https://faolex.fao.org/docs/pdf/lbr213928.pdf
 
-In force: 2022-11-15 (date-made: "ISSUED ON NOVEMBER 15, 2022").
+In force: 2022-11-15 (handbill-publication: "PUBLISHED BY AUTHORITY TUESDAY, NOVEMBER 15, 2022").
 
 Text: the PDF's own text layer as the publisher supplies it, not corrected.
 
