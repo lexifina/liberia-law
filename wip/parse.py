@@ -158,11 +158,7 @@ def penal_units(fid: str) -> tuple[dict, dict]:
     extra: dict[str, dict] = {}
     body_started = False
     for bold, line in blocks(raw(fid)):
-        m = re.match(r"^PART ([IVX]+)\.?\s*(.*)$", line)
-        if m and bold and body_started is not None:
-            # the Contents list (before Part I's own heading) is not law text
-            pass
-        if line == "PART I" or (line.startswith("PART I") and body_started is False and line != "PART I. GENERAL PROVISIONS"):
+        if line == "PART I":  # Part I's own heading; everything before it is the Contents list
             body_started = True
         if not body_started:
             continue

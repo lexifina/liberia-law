@@ -1,16 +1,45 @@
 {
-  "note": "Every file parse.py reads. LiberLII document pages are read only as pinned Internet Archive id_ captures (never from liberlii.org itself). WIPO Lex is read directly for the Constitution's dates.",
-  "files": [
-    {"id": "constitution", "url": "https://web.archive.org/web/20240524225821id_/http://www.liberlii.org/lr/legis/const/col1986235/",
-     "original": "http://www.liberlii.org/lr/legis/const/col1986235/", "capture": "20240524225821"},
-    {"id": "penal-law", "url": "https://web.archive.org/web/20260703155915id_/http://www.liberlii.org/lr/legis/codes/plt26lcolr367/plt26lcolr367.html",
-     "original": "http://www.liberlii.org/lr/legis/codes/plt26lcolr367/plt26lcolr367.html", "capture": "20260703155915"},
-    {"id": "penal-law-2017", "url": "https://web.archive.org/web/20170420024438id_/http://www.liberlii.org/lr/legis/codes/plt26lcolr367/",
-     "original": "http://www.liberlii.org/lr/legis/codes/plt26lcolr367/", "capture": "20170420024438"},
-    {"id": "foi-act", "url": "https://web.archive.org/web/20240630082656id_/http://liberlii.org/lr/legis/acts/foia222/",
-     "original": "http://liberlii.org/lr/legis/acts/foia222/", "capture": "20240630082656"},
-    {"id": "criminal-procedure-law", "url": "https://web.archive.org/web/20170809005959id_/http://www.liberlii.org/lr/legis/codes/cplt2lcolr491/",
-     "original": "http://www.liberlii.org/lr/legis/codes/cplt2lcolr491/", "capture": "20170809005959"},
-    {"id": "wipo-constitution", "url": "https://www.wipo.int/wipolex/en/legislation/details/8556"}
-  ]
+ "note": "Every file parse.py reads. LiberLII document pages are read only as pinned Internet Archive id_ captures (never from liberlii.org itself). WIPO Lex is read directly for the Constitution's dates.",
+ "files": [
+  {
+   "id": "constitution",
+   "url": "https://web.archive.org/web/20240524225821id_/http://www.liberlii.org/lr/legis/const/col1986235/",
+   "original": "http://www.liberlii.org/lr/legis/const/col1986235/",
+   "capture": "20240524225821"
+  },
+  {
+   "id": "penal-law",
+   "url": "https://web.archive.org/web/20260703155915id_/http://www.liberlii.org/lr/legis/codes/plt26lcolr367/plt26lcolr367.html",
+   "original": "http://www.liberlii.org/lr/legis/codes/plt26lcolr367/plt26lcolr367.html",
+   "capture": "20260703155915"
+  },
+  {
+   "id": "penal-law-2017",
+   "url": "https://web.archive.org/web/20170420024438id_/http://www.liberlii.org/lr/legis/codes/plt26lcolr367/",
+   "original": "http://www.liberlii.org/lr/legis/codes/plt26lcolr367/",
+   "capture": "20170420024438"
+  },
+  {
+   "id": "foi-act",
+   "url": "https://web.archive.org/web/20240630082656id_/http://liberlii.org/lr/legis/acts/foia222/",
+   "original": "http://liberlii.org/lr/legis/acts/foia222/",
+   "capture": "20240630082656"
+  },
+  {
+   "id": "criminal-procedure-law",
+   "url": "https://web.archive.org/web/20170809005959id_/http://www.liberlii.org/lr/legis/codes/cplt2lcolr491/",
+   "original": "http://www.liberlii.org/lr/legis/codes/cplt2lcolr491/",
+   "capture": "20170809005959"
+  },
+  {
+   "id": "wipo-constitution",
+   "url": "https://www.wipo.int/wipolex/en/legislation/details/8556"
+  },
+  {
+   "id": "general-construction-law",
+   "url": "https://web.archive.org/web/20240714145606id_/http://www.liberlii.org/lr/legis/codes/gclt15lcolr538/",
+   "original": "http://www.liberlii.org/lr/legis/codes/gclt15lcolr538/",
+   "capture": "20240714145606"
+  }
+ ]
 }
