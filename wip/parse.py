@@ -157,7 +157,8 @@ def penal_units(fid: str) -> tuple[dict, dict]:
     u = Units()
     extra: dict[str, dict] = {}
     body_started = False
-    for bold, line in blocks(raw(fid)):
+    bl = blocks(raw(fid))
+    for i, (bold, line) in enumerate(bl):
         if line == "PART I":  # Part I's own heading; everything before it is the Contents list
             body_started = True
         if not body_started:
@@ -174,9 +175,11 @@ def penal_units(fid: str) -> tuple[dict, dict]:
             continue
         m = re.match(r"^Subchapter ([A-Z])\.\s*(.*)$", line)
         if m and bold:
-            # Subchapter headings belong to the chapter's own file (its outline), not to the section before them.
+            # Subchapter headings belong to the chapter's own file, not to the section before them. A chapter's own
+            # list of sections also names its subchapters: those are followed by a plain (not bold) section line.
+            nxt = bl[i + 1] if i + 1 < len(bl) else (False, "")
             ch = _chapter_of(u)
-            if ch:
+            if ch and nxt[0] and SEC.match(nxt[1]):
                 u.units[ch]["lines"].append(f"Subchapter {m.group(1)}. {m.group(2)}")
             u.cur = None
             continue
