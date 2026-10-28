@@ -1,0 +1,20 @@
+The legal texts come from LiberLII, the Liberia Legal Information Institute (www.liberlii.org), read through the
+Internet Archive's Wayback Machine (web.archive.org) from captures made between 2017 and 2026, retrieved
+28 October 2026:
+
+  Constitution of the Republic of Liberia (1986); Penal Law, Title 26, Liberian Code of Laws Revised;
+  Freedom of Information Act of 2010.
+
+LiberLII publishes no licence for its legislation pages. They are the public law of the Republic of Liberia,
+reproduced with the attribution above; their copyright status is not confirmed here. The dates of the Constitution
+are from WIPO Lex (https://www.wipo.int/wipolex/en/legislation/details/8556).
+
+Changes made by Lexifina: each text was converted to one Markdown file per provision, one paragraph or item per line;
+spacing, quotes and dashes were normalised; tables of contents were left out; LiberLII's dated editorial notes were
+moved from the text into the commit messages; and the versions were arranged as git commits credited to the laws
+that made each change, where the source names them. The wording of the law was not changed. Neither LiberLII nor the
+Government of Liberia endorses this repository.
+
+Lexifina's own contributions (the arrangement of the history, the commit messages, the tables and the tools) are
+dedicated to the public domain under CC0 1.0 Universal:
+https://creativecommons.org/publicdomain/zero/1.0/legalcode
