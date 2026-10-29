@@ -20,7 +20,9 @@ HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 import parse  # noqa: E402
 
-WORD = re.compile(r"[A-Za-z0-9]+")
+WORD = re.compile(r"[A-Za-z]+|[0-9]+")  # "Article11" in the source reads as "Article 11"
+# Headings parse.py names itself (the source prints the list with no heading of its own).
+ALLOWED = Counter({"signatories": 1, "enactment": 1})
 
 
 def words(s: str) -> Counter:
@@ -52,7 +54,7 @@ def main() -> int:
         page = Counter()
         for _bold, line in parse.blocks(parse.raw(src[act["slug"]])):
             page += words(line)
-        added = repo - page
+        added = repo - page - ALLOWED
         unacc = page - repo
         print(f"{act['slug']}: {sum(repo.values())} words; added {sum(added.values())} {dict(added.most_common(12))}; "
               f"unaccounted {sum(unacc.values())} {dict(unacc.most_common(12))}")
