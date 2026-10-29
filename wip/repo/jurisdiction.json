@@ -1,0 +1,11 @@
+{
+  "path": "lr",
+  "code": "LR",
+  "name": "Liberia",
+  "level": "country",
+  "repo": "https://github.com/lexifina/liberia-law",
+  "build": "built: Constitution 1986 (1 version, no amendment applied); Penal Law, Title 26 (4 versions 1978-2006 from LiberLII's dated notes); Freedom of Information Act 2010 (1 version)",
+  "register": "https://claude.ai/artifact/DdS9F6yqpPZtV2i7FGQhYZ",
+  "register_date": "2026-10-28",
+  "sources": 2
+}
