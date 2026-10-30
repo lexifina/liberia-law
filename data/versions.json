@@ -1,0 +1,117 @@
+{
+ "country": "LR",
+ "acts": [
+  {
+   "slug": "constitution",
+   "short": "Const.",
+   "title": "Constitution of the Republic of Liberia (1986)",
+   "url": "http://www.liberlii.org/lr/legis/const/col1986235/",
+   "versions": [
+    {
+     "from": "1986-01-06",
+     "units": 112,
+     "source_url": "https://web.archive.org/web/20240524225821id_/http://www.liberlii.org/lr/legis/const/col1986235/",
+     "sha256": "245586febc5f2fc71ee25b735e764bbbeb34903745108a69c4ce3b4aba2024f8"
+    }
+   ]
+  },
+  {
+   "slug": "penal-law",
+   "short": "PL",
+   "title": "Penal Law (Title 26, Liberian Code of Laws Revised)",
+   "url": "http://www.liberlii.org/lr/legis/codes/plt26lcolr367/plt26lcolr367.html",
+   "versions": [
+    {
+     "from": "1978-04-03",
+     "units": 214,
+     "source_url": "https://web.archive.org/web/20260703155915id_/http://www.liberlii.org/lr/legis/codes/plt26lcolr367/plt26lcolr367.html",
+     "sha256": "387cc7a280ce38f818ced842764841db21cbfd6c3aa2ad482320cd0fee967640"
+    },
+    {
+     "from": "1985-07-09",
+     "units": 214,
+     "source_url": "https://web.archive.org/web/20260703155915id_/http://www.liberlii.org/lr/legis/codes/plt26lcolr367/plt26lcolr367.html",
+     "sha256": "387cc7a280ce38f818ced842764841db21cbfd6c3aa2ad482320cd0fee967640"
+    },
+    {
+     "from": "1994-12-06",
+     "units": 215,
+     "source_url": "https://web.archive.org/web/20260703155915id_/http://www.liberlii.org/lr/legis/codes/plt26lcolr367/plt26lcolr367.html",
+     "sha256": "387cc7a280ce38f818ced842764841db21cbfd6c3aa2ad482320cd0fee967640"
+    },
+    {
+     "from": "2006-01-17",
+     "units": 215,
+     "source_url": "https://web.archive.org/web/20260703155915id_/http://www.liberlii.org/lr/legis/codes/plt26lcolr367/plt26lcolr367.html",
+     "sha256": "387cc7a280ce38f818ced842764841db21cbfd6c3aa2ad482320cd0fee967640"
+    }
+   ]
+  },
+  {
+   "slug": "freedom-of-information-act",
+   "short": "FOIA",
+   "title": "Freedom of Information Act of 2010",
+   "url": "http://liberlii.org/lr/legis/acts/foia222/",
+   "versions": [
+    {
+     "from": "2010-10-06",
+     "units": 59,
+     "source_url": "https://web.archive.org/web/20240630082656id_/http://liberlii.org/lr/legis/acts/foia222/",
+     "sha256": "b3dcfa04e969f7a95620483e062fcb7d6eaad448799499af179e4b936e8691fe"
+    }
+   ]
+  },
+  {
+   "slug": "commercial-code",
+   "short": "Com. Code",
+   "title": "Liberian Commercial Code (Title 7, Liberian Code of Laws Revised)",
+   "url": "https://www.liberlii.org/lr/legis/codes/cct7lcolr396/",
+   "versions": [
+    {
+     "from": "2010-10-07",
+     "units": 471,
+     "source_url": "https://web.archive.org/web/20240524225852id_/http://www.liberlii.org/lr/legis/codes/cct7lcolr396/",
+     "sha256": "1a613490201f8b8855109303706171f021daf350fdd75c6e84ee367a7878f69a"
+    }
+   ]
+  },
+  {
+   "slug": "associations-law",
+   "short": "Assoc. L.",
+   "title": "Associations Law (Title 5, Liberian Code of Laws Revised)",
+   "url": "https://www.liberlii.org/lr/legis/codes/alt5lcolr456/",
+   "versions": [
+    {
+     "from": "1977-01-03",
+     "units": 294,
+     "source_url": "https://web.archive.org/web/20220319183735id_/http://www.liberlii.org/lr/legis/codes/alt5lcolr456/",
+     "sha256": "1dc703128224b727c47a332aea98a1292d53a0c2acfce8f6a356f1f2d247a6e8"
+    },
+    {
+     "from": "1989-08-11",
+     "units": 294,
+     "source_url": "https://web.archive.org/web/20220319183735id_/http://www.liberlii.org/lr/legis/codes/alt5lcolr456/",
+     "sha256": "1dc703128224b727c47a332aea98a1292d53a0c2acfce8f6a356f1f2d247a6e8"
+    },
+    {
+     "from": "1989-08-31",
+     "units": 294,
+     "source_url": "https://web.archive.org/web/20220319183735id_/http://www.liberlii.org/lr/legis/codes/alt5lcolr456/",
+     "sha256": "1dc703128224b727c47a332aea98a1292d53a0c2acfce8f6a356f1f2d247a6e8"
+    },
+    {
+     "from": "1999-11-26",
+     "units": 347,
+     "source_url": "https://web.archive.org/web/20220319183735id_/http://www.liberlii.org/lr/legis/codes/alt5lcolr456/",
+     "sha256": "1dc703128224b727c47a332aea98a1292d53a0c2acfce8f6a356f1f2d247a6e8"
+    },
+    {
+     "from": "2002-06-19",
+     "units": 360,
+     "source_url": "https://web.archive.org/web/20220319183735id_/http://www.liberlii.org/lr/legis/codes/alt5lcolr456/",
+     "sha256": "1dc703128224b727c47a332aea98a1292d53a0c2acfce8f6a356f1f2d247a6e8"
+    }
+   ]
+  }
+ ]
+}
