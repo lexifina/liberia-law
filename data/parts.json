@@ -1,0 +1,17 @@
+{
+ "parts": {
+  "60-commercial-code.json": {
+   "acts": [
+    "commercial-code"
+   ],
+   "sha256": "675cb9ce2f3fbd4be4ab1e33d8ebd5a1762da709a42541a63ec1be3cee341252"
+  },
+  "61-associations-law.json": {
+   "acts": [
+    "associations-law"
+   ],
+   "sha256": "8425b9e2ed0b6d2c8544c939d98047c0d2f8e310854e5ad3f3adabc4be99faff"
+  }
+ },
+ "schema": 1
+}
