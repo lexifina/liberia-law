@@ -204,9 +204,15 @@ def resolve(commit: str, act: str, unit: str, files: list[str] | None = None) ->
     exact = f'{act}/{unit}.md'
     if exact in files:
         return exact
+    d = re.fullmatch(r'(\d+)\.(\d+)([a-z]*)', unit, re.I)
+    if d:   # a dotted section number: "14.70" is the file sec-14-070
+        want = re.compile(rf'{re.escape(act)}/[a-z-]*0*{int(d.group(1))}-0*{int(d.group(2))}{re.escape(d.group(3))}\.md$', re.I)
+        hits = [f for f in files if want.match(f)]
+        if len(hits) == 1:
+            return hits[0]
     m = re.fullmatch(r'(\d+)(.*)', unit)
     if m:
-        want = re.compile(rf'{re.escape(act)}/[a-z-]*0*{int(m.group(1))}{re.escape(m.group(2))}\.md$')
+        want = re.compile(rf'{re.escape(act)}/[a-z-]*0*{int(m.group(1))}{re.escape(m.group(2))}\.md$', re.I)  # 78A finds sec-078a
         hits = [f for f in files if want.match(f)]
         # A bare number means the article: "19" is art-019, not a transitional provision numbered 19.
         arts = [f for f in hits if f.split('/', 1)[1].startswith(('art-', 'art'))]
