@@ -59,6 +59,7 @@ Each change is credited to the law that made it where LiberLII names one: the Co
 - Each act's latest text was checked word for word against the LiberLII page it was parsed from: no word is added, and every word of the page is in the history or in a left-out outline, title line or note.
 - A second build from the same corpus gave identical hashes for all 12 history commits and 16 tags.
 - History is append-only: no merge commits, no commit date that goes backwards, none dated in the future, and every commit's trailers parse.
+- [vulnerabilities/](vulnerabilities/): possible drafting mistakes in this law, found by global-law's detectors and checked by hand. Not run yet.
 
 ## What it does not show
 
@@ -81,6 +82,10 @@ Each change is credited to the law that made it where LiberLII names one: the Co
 See [`LICENSE`](LICENSE). LiberLII publishes no licence for its legislation pages; they are the public law of Liberia, reproduced with attribution, and neither LiberLII nor the Government of Liberia endorses this repository. Lexifina's arrangement, commit messages, tables and tools are CC0 1.0.
 
 No AI model wrote, translated or corrected legal text, and none runs at build time; the scripts were written by an AI model (see [`REPRODUCE.md`](REPRODUCE.md)).
+
+## Visualisations
+
+- [visualisations/](visualisations/): charts drawn from this repository. Not drawn yet.
 
 ## More
 
