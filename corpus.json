@@ -1,0 +1,26 @@
+{
+  "corpus": "lr/national/acts",
+  "name": "Liberia law: the Constitution, titles of the Liberian Code of Laws Revised and separate Acts",
+  "label": "Liberia",
+  "language": "en",
+  "dates": {
+    "commit": "in-force",
+    "other_trailers": [
+      "In-force-basis",
+      "Source",
+      "Kind"
+    ],
+    "time": "12:00 Africa/Monrovia (UTC+0)"
+  },
+  "in_force_trailer": "In-force",
+  "has_future_branch": false,
+  "citation": {
+    "file": "((?:codes/title-[0-9]+-[^/]+)|(?:acts/[0-9]{4}/[^/]+)|constitution)/(?:sec|art)-0*([0-9]+[a-z-]*)\\.md",
+    "cites": "(^|[^0-9])(section|\u00a7|article|art\\.?) ?{n}\\b"
+  },
+  "sources": [
+    "https://lla.gov.lr",
+    "https://www.liberlii.org (archived copies)",
+    "https://www.wipo.int/wipolex"
+  ]
+}
