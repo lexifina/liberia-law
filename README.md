@@ -9,20 +9,20 @@ The law of Liberia as a git history: one file per article or section, one commit
 
 Part of [lexifina/global-law](https://github.com/lexifina/global-law), one git history for every country's law: this is Liberia's national law, which global-law reads at `liberia/national/acts/`.
 
-**What is in it now:** the Constitution of 1986 and four other acts from LiberLII (the Penal Law, the Associations Law, the Commercial Code of 2010 and the Freedom of Information Act 2010), with 12 versions from 3 January 1977 to 7 October 2010. [`REPRODUCE.md`](REPRODUCE.md) lists every act with its versions; [`data/laws.csv`](data/laws.csv) lists the 6 laws the history names, with their dates.
+**What is in it now:** the Constitution of 1986; titles of the Liberian Code of Laws Revised (Civil Procedure, Associations, Commercial Code, Decedents Estates, Domestic Relations, General Construction, Penal Law, Public Health); separate Acts from 1979 to 2018, among them the Decent Work Act 2015 and the Land Rights Act 2018; and one Executive Order. See [`STRUCTURE.md`](STRUCTURE.md) for the layout. Supreme Court decisions are kept in a separate case-law repository. [`REPRODUCE.md`](REPRODUCE.md) says how each part was built; [`data/laws.csv`](data/laws.csv) lists the 6 laws the first build named, with their dates.
 
-Each act is a folder named after its short title, with one file per article or section named by its printed number, plus its chapter headings and a `README.md` listing its provisions and their changes (`penal-law/sec-14-070.md` is § 14.70 of the Penal Law, on rape; `constitution/art-083.md` is Article 83 of the Constitution).
+Titles of the Code are in `codes/title-NN-<slug>/`, separate Acts in `acts/<year>/<slug>/`, each with one file per article or section named by its printed number and a `README.md` listing its provisions (`codes/title-26-penal-law/sec-14-070.md` is § 14.70 of the Penal Law, on rape; `constitution/art-083.md` is Article 83 of the Constitution).
 
-The text is in English, as LiberLII prints it; its contents lists are left out, and its dated notes are in the commit messages.
+The text is in English, as each source prints it; its contents lists are left out, and its dated notes are in the commit messages.
 
 ## Questions as git commands
 
 | Question | Command |
 | --- | --- |
-| Every change to § 14.70 of the Penal Law | `git log -p --word-diff -- penal-law/sec-14-070.md` |
-| Which law wrote each line of § 14.70? | `git blame penal-law/sec-14-070.md` |
-| Every version of the Penal Law, with the day each took effect | `git log --format="%h %(trailers:key=In-force,valueonly,separator=) %an" -- penal-law ':!penal-law/README.md'` |
-| § 14.70 as in force on 1 January 2000 | `python tools/on.py 2000-01-01 penal-law sec-14-070` |
+| Every change to § 14.70 of the Penal Law | `git log -p --word-diff -- codes/title-26-penal-law/sec-14-070.md` |
+| Which law wrote each line of § 14.70? | `git blame codes/title-26-penal-law/sec-14-070.md` |
+| Every version of the Penal Law, with the day each took effect | `git log --format="%h %(trailers:key=In-force,valueonly,separator=) %an" -- codes/title-26-penal-law ':!codes/title-26-penal-law/README.md'` |
+| § 14.70 as in force on 1 January 2000 | `python tools/on.py 2000-01-01 codes/title-26-penal-law sec-14-070` |
 
 **Outside git**, we also host this record publicly, for free:
 
@@ -38,7 +38,7 @@ Both assistants read the record through the free Global law connector (MCP, `htt
 ```sh
 git clone --depth 1 https://github.com/lexifina/global-law && cd global-law
 python3 tools/countries.py add liberia/national/acts
-python3 tools/law.py show 2026-01-01 liberia/national/acts/penal-law/sec-14-070.md
+python3 tools/law.py show 2026-01-01 liberia/national/acts/codes/title-26-penal-law/sec-14-070.md
 ```
 
 Opened in Claude Code, Cursor, VS Code or Codex, the clone also starts a local MCP server with the same tools ([MCP.md](https://github.com/lexifina/global-law/blob/main/MCP.md)).
@@ -67,7 +67,7 @@ Each change is credited to the law that made it where LiberLII names one: the Co
 - **Undated amendments.** LiberLII consolidates some amendments without a note; those provisions are shown in every version as it prints them, so an older version may hold later wording. Amendments LiberLII has not applied are not shown at all.
 - **The earlier rape provisions.** The § 14.70 and § 14.71 in force before 17 January 2006 still govern earlier offences; the files show the text for new ones. § 14.78(3) and (4), repealed by the new § 14.70, are kept as LiberLII prints them.
 - **Which law made most changes.** LiberLII names no amending law for six of the seven changes after a first version.
-- **Most Liberian law.** Only these five acts: no subsidiary legislation and no case law. Government sites publish recent acts as scanned PDFs, which are not read; the Criminal Procedure Law and the Civil Procedure Law are on LiberLII without an effective date, so they are not built.
+- **Most Liberian law.** Government sites publish many acts as scanned PDFs without a text layer, which are not read (no OCR of ours). The Criminal Procedure Law (Title 2) is not built: no source found gives its text with a date. Titles taken from the Liberia Land Authority's laws repository without an effective date (Civil Procedure, Domestic Relations, General Construction, Public Health) are dated as at the day the publisher's PDF was made (`In-force-basis: publisher-file-date`), so their history starts on that day; the Domestic Relations Law's publication day in 1973 is not printed in the copy. Copies that are not the official handbill are tagged `Source-status: secondary copy`.
 
 ## Sources
 
@@ -76,10 +76,12 @@ Each change is credited to the law that made it where LiberLII names one: the Co
 | [LiberLII](https://www.liberlii.org) (Liberia Legal Information Institute, WorldLII) | Legal information institute: titles of the Liberian Code of Laws Revised and acts | no; one text per act, with dated notes | The text, the in-force clauses, and the dated notes behind each later version; read from pinned [Internet Archive](https://web.archive.org) captures |
 | [WIPO Lex](https://www.wipo.int/wipolex/en/legislation/details/8556) | Legislation database | no | The Constitution's adoption and entry into force |
 | National Elections Commission, Referendum Regulations (2011) | Regulations | no | Joint Resolution 001 (2010), the amendments put to the 2011 referendum |
+| [Liberia Land Authority laws repository](https://lla.gov.lr/index.php/downloadable-resources/policies-laws-regulations-repository) | Government agency's library of Acts, handbills and Code titles (PDF) | no | Text from the PDFs' own text layers; dates from the handbill covers and in-force clauses |
+| [Ministry of Labour](https://mol.gov.lr) | Ministry site (PDF) | no | The Decent Work Act 2015 handbill |
 
 ## Licence
 
-See [`LICENSE`](LICENSE). LiberLII publishes no licence for its legislation pages; they are the public law of Liberia, reproduced with attribution, and neither LiberLII nor the Government of Liberia endorses this repository. Lexifina's arrangement, commit messages, tables and tools are CC0 1.0.
+See [`LICENSE`](LICENSE). LiberLII publishes no licence for its legislation pages, and the Liberia Land Authority and the Ministry of Labour publish their PDFs without terms; they are the public law of Liberia, reproduced with attribution, and neither LiberLII nor the Government of Liberia endorses this repository. Lexifina's arrangement, commit messages, tables and tools are CC0 1.0.
 
 No AI model wrote, translated or corrected legal text, and none runs at build time; the scripts were written by an AI model (see [`REPRODUCE.md`](REPRODUCE.md)).
 

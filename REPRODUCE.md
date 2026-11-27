@@ -98,3 +98,11 @@ Model use at data-build time:
 - none: no model wrote, summarised or parsed legal text. Claude Code (Claude Opus 5.5, claude-opus-5-5) wrote Lexifina's code and chose the sources; parsing is deterministic code.
 - Commercial Code: none at data-build time; parsing is deterministic code.
 - Associations Law: none at data-build time; parsing is deterministic code.
+
+## Later additions (runner, 2026-11-27)
+
+Built by `scripts/liberia-law/runner` (lr_fetch.py, lr_build.py, laws.json): each PDF's own text layer, one
+file per section, dated from the handbill cover and the Act's in-force clause, or, for Code titles without
+one, as at the day the publisher's PDF was made. Sources: Liberia Land Authority laws repository
+(https://lla.gov.lr), Ministry of Labour (https://mol.gov.lr), retrieved 2026-11-27. The flat act folders
+were moved into codes/ and acts/ by one pure-rename commit; see STRUCTURE.md.

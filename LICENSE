@@ -9,6 +9,11 @@ LiberLII publishes no licence for its legislation pages. They are the public law
 reproduced with the attribution above; their copyright status is not confirmed here. The dates of the Constitution
 are from WIPO Lex (https://www.wipo.int/wipolex/en/legislation/details/8556).
 
+Later additions come from PDFs that Liberian government bodies publish, read from each PDF's own text layer
+(no OCR by Lexifina): the Liberia Land Authority's laws repository (https://lla.gov.lr) and the Ministry of
+Labour (https://mol.gov.lr). Neither publishes terms of use for them; they are official texts of the law of
+the Republic of Liberia, reproduced with attribution.
+
 Changes made by Lexifina: each text was converted to one Markdown file per provision, one paragraph or item per line;
 spacing, quotes and dashes were normalised; tables of contents were left out; LiberLII's dated editorial notes were
 moved from the text into the commit messages; and the versions were arranged as git commits credited to the laws
