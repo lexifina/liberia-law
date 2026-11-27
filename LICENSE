@@ -14,6 +14,14 @@ Later additions come from PDFs that Liberian government bodies publish, read fro
 Labour (https://mol.gov.lr). Neither publishes terms of use for them; they are official texts of the law of
 the Republic of Liberia, reproduced with attribution.
 
+Since 2026-11-27 also: PDFs published by the Central Bank of Liberia (cbl.org.lr), the Executive Mansion
+(emansion.gov.lr), the Liberia Revenue Authority (lra.gov.lr), the Judiciary (judiciary.gov.lr), the Liberia
+Telecommunications Authority, the Environmental Protection Agency, the Liberia Petroleum Regulatory Authority,
+the Public Procurement and Concessions Commission, the Forestry Development Authority and other ministries and
+agencies; none publishes terms of use for them, and they are official texts reproduced with attribution.
+FAOLEX (faolex.fao.org), the FAO legal database: copies reproduced with credit to FAOLEX under FAO's terms
+(non-commercial reuse with acknowledgement); each such commit carries `Source-status: secondary copy (FAOLEX ...)`.
+
 Changes made by Lexifina: each text was converted to one Markdown file per provision, one paragraph or item per line;
 spacing, quotes and dashes were normalised; tables of contents were left out; LiberLII's dated editorial notes were
 moved from the text into the commit messages; and the versions were arranged as git commits credited to the laws

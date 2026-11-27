@@ -106,3 +106,25 @@ file per section, dated from the handbill cover and the Act's in-force clause, o
 one, as at the day the publisher's PDF was made. Sources: Liberia Land Authority laws repository
 (https://lla.gov.lr), Ministry of Labour (https://mol.gov.lr), retrieved 2026-11-27. The flat act folders
 were moved into codes/ and acts/ by one pure-rename commit; see STRUCTURE.md.
+
+## Rotation pass (2026-11-27)
+
+Built by `scripts/liberia-law/runner`: `lr_wpmedia.py` (WordPress media lists of judiciary.gov.lr, lra.gov.lr,
+lta.gov.lr, epa.gov.lr, lpra.gov.lr, mol.gov.lr and other ministries), `lr_drupal.py` (document listings of
+cbl.org.lr, emansion.gov.lr, moj.gov.lr, ppcc.gov.lr, mot.gov.lr, lacc.gov.lr), `lr_faolex.py` (FAOLEX records for
+Liberia from FAOLEX's public sitemaps), `lr_hf.py` (government PDF URLs from a public Hugging Face URL list; only the
+URLs are used, each PDF is fetched from its own government host), then `lr_auto.py` and `lr_build.py`. One request in
+flight per host, at least 1 s apart. Text is each PDF's own text layer (PyMuPDF); scans without one are held (no OCR).
+
+Dating (`lr_dates.py`), from the document's own words only:
+- `effective-date-clause`: a clause that names the day ("shall become effective on March 1, 2014");
+- `publication-in-handbills`: "shall take effect ... upon publication in handbills" and the handbill's printed day;
+- `handbill-publication`: an Act whose handbill cover prints "Published by Authority ... Printed <day>" (Liberian
+  Acts take effect on publication into handbills);
+- `signature-date`: "shall take effect immediately" / "upon signature" and the one signing day the text gives;
+- `date-made`: a regulation, directive or order with no commencement words, dated the day it was issued
+  ("Issued this 2nd day of July, A.D. 2012"); this is the day it was made.
+Held: scans (most Liberia Revenue Authority customs regulations and Executive Orders), texts with no day, copies
+that cite later years (consolidated texts), reprints printed years after the year in their title, drafts, and
+second copies of the same Act. Ten texts from the first automatic pass were withdrawn by one `Kind: correction`
+commit for these reasons.
