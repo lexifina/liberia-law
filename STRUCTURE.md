@@ -5,6 +5,7 @@
 | `constitution/` | The Constitution of the Republic of Liberia (1986), one file per article (`art-083.md`) |
 | `codes/title-NN-<slug>/` | A title of the Liberian Code of Laws Revised, e.g. `codes/title-26-penal-law/`, `codes/title-01-civil-procedure-law/` |
 | `acts/<year>/<slug>/` | A separate Act, by the year it took effect, e.g. `acts/2010/freedom-of-information-act/` |
+| `executive-orders/<year>/<NNN>-<slug>/` | An Executive Order, by the year it took effect and its number, as one `text.md` |
 
 Each folder holds one file per section (`sec-14-070.md` is § 14.70; `sec-012.md` is section 12), a `preamble.md` for
 the text before the first section, and a `README.md` with the source and the section headings. No folder holds more
